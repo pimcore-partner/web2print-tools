@@ -90,7 +90,7 @@ class Outputchanneltable extends Document\Editable implements \Iterator, Editmod
             'selectedClass' => $this->selectedClass,
             'elements' => $this->elements,
             'outputChannel' => $this->outputChannel,
-            'selectedFavouriteOutputChannel' => $this->selectedFavouriteOutputChannel
+            'selectedFavouriteOutputChannel' => $this->selectedFavouriteOutputChannel,
         ];
     }
 
@@ -100,7 +100,7 @@ class Outputchanneltable extends Document\Editable implements \Iterator, Editmod
             'selectedClass' => $this->selectedClass,
             'elements' => $this->elementIds,
             'outputChannel' => $this->outputChannel,
-            'selectedFavouriteOutputChannel' => $this->selectedFavouriteOutputChannel
+            'selectedFavouriteOutputChannel' => $this->selectedFavouriteOutputChannel,
         ];
     }
 
@@ -135,7 +135,7 @@ class Outputchanneltable extends Document\Editable implements \Iterator, Editmod
             'selectedFavouriteOutputChannel' => $this->selectedFavouriteOutputChannel,
             'elements' => $return,
             'outputChannel' => $this->outputChannel,
-            'documentId' => $this->getDocumentId()
+            'documentId' => $this->getDocumentId(),
         ];
     }
 
@@ -225,7 +225,7 @@ class Outputchanneltable extends Document\Editable implements \Iterator, Editmod
 
                     $dependencies[$key] = [
                         'id' => $element->getId(),
-                        'type' => 'object'
+                        'type' => 'object',
                     ];
                 }
             }

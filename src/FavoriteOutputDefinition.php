@@ -23,12 +23,14 @@ use Pimcore\Logger;
 class FavoriteOutputDefinition extends \Pimcore\Model\AbstractModel
 {
     public $id;
+
     public $classId;
+
     public $description;
+
     public $configuration;
 
     /**
-     * @param $id
      *
      * @return FavoriteOutputDefinition|null
      */

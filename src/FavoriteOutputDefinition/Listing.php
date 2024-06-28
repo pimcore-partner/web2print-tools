@@ -31,7 +31,6 @@ class Listing extends \Pimcore\Model\Listing\AbstractListing
     /**
      * @param string $key
      *
-     * @return bool
      */
     public function isValidOrderKey($key): bool
     {

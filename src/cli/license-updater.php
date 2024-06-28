@@ -126,7 +126,7 @@ foreach ($files['php'] as $file) {
     echo 'process file ' . $file . '...';
     $fileContent = file_get_contents($file);
     $fileContent = processPHPContent($fileContent, $license);
-//    echo $fileContent; die();
+    //    echo $fileContent; die();
     file_put_contents($file, $fileContent);
     echo "done\n";
 }
@@ -136,7 +136,7 @@ foreach ($files['css'] as $file) {
     echo 'process file ' . $file . '...';
     $fileContent = file_get_contents($file);
     $fileContent = processTEXTContent($fileContent, $license);
-//    echo $fileContent; die();
+    //    echo $fileContent; die();
     file_put_contents($file, $fileContent);
     echo "done\n";
 }
@@ -146,7 +146,7 @@ foreach ($files['txt'] as $file) {
     echo 'process file ' . $file . '...';
     $fileContent = file_get_contents($file);
     $fileContent = processTEXTContent($fileContent, $license);
-//    echo $fileContent; die();
+    //    echo $fileContent; die();
     file_put_contents($file, $fileContent);
     echo "done\n";
 }
@@ -156,7 +156,7 @@ foreach ($files['js'] as $file) {
     echo 'process file ' . $file . '...';
     $fileContent = file_get_contents($file);
     $fileContent = processTEXTContent($fileContent, $license);
-//    echo $fileContent; die();
+    //    echo $fileContent; die();
     file_put_contents($file, $fileContent);
     echo "done\n";
 }

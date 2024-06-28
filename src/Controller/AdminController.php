@@ -33,7 +33,6 @@ class AdminController extends UserAwareController
     use JsonHelperTrait;
 
     /**
-     * @param Request $request
      * @Route("/favorite-output-definitions-table-proxy")
      */
     public function favoriteOutputDefinitionsTableProxyAction(Request $request)
@@ -50,6 +49,7 @@ class AdminController extends UserAwareController
                         return $this->jsonResponse(['data' => [], 'success' => true]);
                     }
                 }
+
                 throw new \Exception('OutputDefinition with id ' . $idValue . ' not found.');
             } elseif ($request->get('xaction') == 'update') {
                 $data = json_decode($request->get('data'), true);
@@ -115,7 +115,6 @@ class AdminController extends UserAwareController
     }
 
     /**
-     * @param Request $request
      * @Route("/favorite-output-definitions")
      */
     public function favoriteOutputDefinitionsAction(Request $request)
@@ -135,7 +134,6 @@ class AdminController extends UserAwareController
     }
 
     /**
-     * @param Request $request
      * @Route("/save-or-update-favorite-output-definition")
      */
     public function saveOrUpdateFavoriteOutputDefinitionAction(Request $request)

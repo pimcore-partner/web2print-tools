@@ -35,9 +35,6 @@ class Web2PrintToolsExtension extends Extension implements PrependExtensionInter
         }
     }
 
-    /**
-     * @inheritdoc
-     */
     public function load(array $configs, ContainerBuilder $container)
     {
         // use this to load your custom configurations

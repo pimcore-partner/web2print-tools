@@ -33,21 +33,14 @@ class OutputChannelExtension extends AbstractExtension
         ];
     }
 
-    /**
-     * @param array $configArray
-     *
-     * @return int
-     */
     public function getMaxGroupDepth(array $configArray): int
     {
         return Tool::getMaxGroupDepth($configArray);
     }
 
     /**
-     * @param OutputDefinition|null $outputDefinition
      * @param null $context
      *
-     * @return array
      */
     public function buildOutputDataConfig(?OutputDefinition $outputDefinition, $context = null): array
     {
@@ -58,12 +51,6 @@ class OutputChannelExtension extends AbstractExtension
         return [];
     }
 
-    /**
-     * @param IConfigElement $configElement
-     * @param string $classname
-     *
-     * @return string
-     */
     public function getColumnHeader(IConfigElement $configElement, string $classname): string
     {
         return $configElement->getLabeledValue(new $classname())->label;

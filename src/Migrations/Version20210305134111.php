@@ -31,12 +31,10 @@ class Version20210305134111 extends AbstractMigration
         return false;
     }
 
-    /**
-     * @param Schema $schema
-     */
     public function up(Schema $schema): void
     {
         $result = null;
+
         try {
             if (Config::getSystemConfiguration()) {
                 $result = \Pimcore\Db::get()->fetchAssociative("SHOW TABLES LIKE '" . Dao::TABLE_NAME . "';");
@@ -48,9 +46,6 @@ class Version20210305134111 extends AbstractMigration
         SettingsStore::set('BUNDLE_INSTALLED__Web2PrintToolsBundle\\Web2PrintToolsBundle', $installed, 'bool', 'pimcore');
     }
 
-    /**
-     * @param Schema $schema
-     */
     public function down(Schema $schema): void
     {
     }

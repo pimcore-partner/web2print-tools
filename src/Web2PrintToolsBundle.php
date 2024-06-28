@@ -32,13 +32,10 @@ class Web2PrintToolsBundle extends AbstractPimcoreBundle implements PimcoreBundl
         return 'pimcore/web2print-tools-bundle';
     }
 
-    /**
-     * @inheritDoc
-     */
     public function getCssPaths(): array
     {
         return [
-            '/bundles/web2printtools/css/admin.css'
+            '/bundles/web2printtools/css/admin.css',
         ];
     }
 
@@ -50,7 +47,7 @@ class Web2PrintToolsBundle extends AbstractPimcoreBundle implements PimcoreBundl
             '/bundles/web2printtools/js/Web2Print/saveAsFavouriteOutputDefinitionDialog.js',
             '/bundles/web2printtools/js/pimcore/document/editables/metaentry/abstract.js',
             '/bundles/web2printtools/js/pimcore/document/editables/metaentry/defaultentry.js',
-            '/bundles/web2printtools/js/pimcore/document/editables/metaentry/table.js'
+            '/bundles/web2printtools/js/pimcore/document/editables/metaentry/table.js',
         ];
     }
 
@@ -64,7 +61,7 @@ class Web2PrintToolsBundle extends AbstractPimcoreBundle implements PimcoreBundl
     public function getEditmodeCssPaths(): array
     {
         return [
-            '/bundles/web2printtools/css/admin.css'
+            '/bundles/web2printtools/css/admin.css',
         ];
     }
 
