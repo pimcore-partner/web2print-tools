@@ -467,7 +467,7 @@ pimcore.document.editables.outputchanneltable = Class.create(pimcore.document.ed
 
     getCurrentClassId: function() {
         var classStore = pimcore.globalmanager.get("object_types_store");
-        var index = classStore.find("text", this.selectedClass);
+        var index = classStore.find("text", this.selectedClass, 0, false, false, true);
         if(typeof index !== 'undefined'  && classStore.getAt(index)) {
             return classStore.getAt(index).id;
         }
