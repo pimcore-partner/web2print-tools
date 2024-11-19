@@ -26,7 +26,7 @@ class FavoriteOutputDefinition extends \Pimcore\Model\AbstractModel
 
     public $classId;
 
-    public $description;
+    public $description = '';
 
     public $configuration;
 
